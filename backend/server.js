@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["https://main--leaderboard-frontend.netlify.app/"],
+    origin: ["https://main--leaderboard-frontend.netlify.app"],
     credentials:true,
   })
 );
