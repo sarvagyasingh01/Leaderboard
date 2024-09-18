@@ -27,6 +27,10 @@ app.use("/api/users/", userRoute);
 //Error Middleware
 app.use(errorHandler);
 
+app.get("/", (req, res) => {
+  res.send("Leaderboard Backend")
+})
+
 
 const PORT = process.env.PORT || 5000;
 
